@@ -1,0 +1,77 @@
+.add-body {
+  padding-top: 1%;
+  padding-bottom: 10%;
+  background-color: #071522;
+  height: 100vh;
+  margin-bottom: 10%;
+}
+.master-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  margin-right: 5%;
+  margin-left: 5%;
+  border-radius: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: slide-side 1.5s ease-out;
+}
+
+.form {
+  padding-top: 3%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  background-color: white;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+.form-heading {
+  font-weight: 600;
+}
+
+.size-brand {
+  margin-top: 5%;
+  display: flex;
+}
+
+.size {
+  width: 197.5px;
+  position: relative;
+  height: 50px;
+  border-radius: 7px;
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.brand {
+  width: 197.5px;
+  position: relative;
+  border-radius: 7px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.description {
+  padding: 20px 10px 10px;
+}
+
+.add-a-listing-img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+@keyframes slide-side {
+  from {
+    left: -1000px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}

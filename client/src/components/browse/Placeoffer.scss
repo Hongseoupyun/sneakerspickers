@@ -1,0 +1,221 @@
+.placeoffer-body {
+  position: relative;
+  padding-top: 6rem;
+  height: 100vh;
+  background-color: #151929;
+}
+.placeoffers-cards {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.placeoffer-other-card {
+  background-color: white;
+  margin-left: 2%;
+  height: 79vh;
+  width: 35vw;
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.placeoffer-mylisting {
+  display: flex;
+  flex-direction: column;
+}
+.placeoffer-mylisting-item {
+  display: flex;
+  width: 43vw;
+  height: 40vh;
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+.placeoffer-tradeimg {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 27vh;
+  margin: 1.5%;
+  height: 2%;
+}
+.placeoffer-img {
+  position: relative;
+  width: 92%;
+  height: 60%;
+  top: 3%;
+  left: 4%;
+  border-radius: 20px;
+}
+.placeoffer-texts {
+  position: relative;
+  left: 5%;
+  top: 1%;
+  font-size: 1.6rem;
+}
+.placeoffer-name {
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+  position: relative;
+  left: 5.5%;
+  top: 3%;
+}
+.placeoffer-pref,
+.placeoffer-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5%;
+  font-family: "Rubik", sans-serif;
+}
+.tradeimg {
+  width: 9vw;
+  height: 16vh;
+}
+.placeoffer-buttons {
+  position: relative;
+  left: 89%;
+  top: -3%;
+  width: 8rem;
+}
+.login-wrapper {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+button .login-button {
+  margin-top: 15px;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.accept-decline button {
+  &:hover {
+    background-color: #0dcaf0;
+    border: 2px solid #101fbd;
+  }
+}
+.my-shoes-card {
+  display: flex;
+  width: 40vw;
+  height: 25.5vh;
+  background-color: white;
+  margin-bottom: 2.5%;
+  margin-right: 2vw;
+  border-radius: 20px;
+  position: relative;
+  animation: slide 1.3s ease-out;
+  transform: scale(1);
+  transition: 0.7s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.6s;
+  }
+}
+.shoes-selected {
+  transform: scale(1.051);
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.051);
+    transition: 0.3s;
+  }
+}
+
+.my-listing-img {
+  width: 94%;
+  height: 94%;
+}
+.my-shoes-img {
+  width: 40%;
+  height: 90%;
+  position: relative;
+  top: 5%;
+  left: 2%;
+  border-radius: 20px;
+}
+.placeoffer-button {
+  border-radius: 20px;
+  font-family: "Staatliches", cursive;
+  color: white;
+}
+#button-offer {
+  margin-bottom: 10%;
+  background-color: navy;
+  border: none;
+  transform: scale(1);
+  transition: 0.7s;
+  &:hover {
+    background-color: green;
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}
+#button-cancel {
+  margin-top: 10%;
+  background-color: red;
+  border-radius: 20px;
+  border: none;
+  width: 10vw;
+  transform: scale(1);
+  transition: 0.7s;
+  &:hover {
+    background-color: red;
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}
+.placeoffer-brand-size {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+}
+.placeoffer-mylisting {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 7%;
+  top: 8%;
+}
+
+.my-shoes-name {
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.my-shoes-pref,
+.my-shoes-desc,
+.my-shoes-size {
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+  font-family: "Rubik", sans-serif;
+}
+@keyframes slide-up-noop {
+  from {
+    bottom: -300px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes slide-noop {
+  from {
+    top: -300px;
+    opacity: 1;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+.myItem-container{
+  scrollbar-width: none;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@200;700&display=swap");
+
+.myoffers-body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #071522;
+  height: 120%;
+  width: auto;
+  padding-bottom: 5%;
+  min-height: 1000px;
+}
+.myoffers-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: #071522;
+}
+.myoffers-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  height: 79vh;
+  width: 33vw;
+  border-radius: 20px;
+}
+.myoffers-img {
+  width: 92%;
+  height: 55%;
+  border-radius: 20px;
+  position: relative;
+  left: 4%;
+  top: -4.5%;
+  z-index: 5;
+}
+
+#history_id_card {
+  width: 92%;
+  height: 55%;
+  border-radius: 20px;
+  position: relative;
+  left: 4%;
+  top: -1.5%;
+  z-index: 5;
+}
+
+.mylisting-body-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(33, 37, 41);
+  height: 100%;
+}
+.mylisting-container-offers-left {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  background-color: transparent;
+  margin-top: 10%;
+  height: 100%;
+  animation: slide 1.3s ease-out;
+  margin-left: 5%;
+}
+
+.mylisting-container-second {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  padding-left: 3em;
+}
+
+.tradeslot {
+  height: 5em;
+  width: 10em;
+  flex-direction: column;
+  display: flex;
+  margin-top: 13rem;
+  margin-right: 4.5rem;
+  margin-left: 1.5rem;
+}
+
+.tradepic {
+  padding-left: 3rem;
+}
+
+#history_trade_icon {
+  height: 5em;
+  width: 10em;
+  flex-direction: column;
+  display: flex;
+  margin-top: 13rem;
+  margin-left: 1.5%;
+  margin-right: 5.5%;
+}
+
+.offerpic-second {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 13px;
+  position: relative;
+
+  z-index: 5;
+}
+
+.mylisting-card-contents-offers-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  height: 80vh;
+  width: 41vw;
+  border-radius: 10px;
+}
+
+.listing-text-history {
+  margin-left: 9%;
+  position: relative;
+
+  h1 {
+    font-family: "Staatliches", cursive;
+    font-size: 3rem;
+  }
+}
+.myoffers-text {
+  margin-bottom: 1%;
+  font-size: 1.4rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.listing-text-second {
+  margin-right: 3rem;
+  position: relative;
+  margin-left: 1rem;
+  h1 {
+    padding-bottom: -2rem;
+    font-size: 2.8rem;
+    font-weight: 900;
+  }
+}
+
+.my-email-second {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.acceptofferbutton {
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  height: 4rem;
+  width: 11em;
+  top: 7rem;
+  left: 22rem;
+  border-radius: 32px;
+  margin-bottom: 10%;
+  transform: scale(1);
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.07);
+    transition: 0.4s;
+    background-color: green;
+  }
+}
+
+.declineofferbutton {
+  border:none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  height: 4rem;
+  width: 11em;
+  top: 7rem;
+  left: 22rem;
+  margin-top: 10%;
+  border-radius: 32px;
+  transform: scale(1);
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.07);
+    transition: 0.4s;
+    background-color: rgb(224, 26, 26);
+  }
+}
+
+#left {
+  animation: slide-noop 1.5s ease;
+}
+#right {
+  animation: slide-up-noop 1.5s ease;
+}

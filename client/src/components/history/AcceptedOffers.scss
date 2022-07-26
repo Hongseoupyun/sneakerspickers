@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@200;700&display=swap");
+.mylisting-body-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(33, 37, 41);
+  height: 100%;
+  min-height: 1000px;
+}
+.mylisting-container-history-left {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  border-radius: 25px;
+  background-color: transparent;
+  margin-top: 8%;
+  height: 100%;
+  animation: slide 1.3s ease-out;
+}
+
+.mylisting-container-second {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  padding-left: 3em;
+}
+
+.mylisting-card-contents-history-left {
+  position: relative;
+  left: -8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  height: 32rem;
+  width: 32rem;
+  border-radius: 10px;
+}
+.history-img {
+  width: 92%;
+  height: 55%;
+  border-radius: 20px;
+  position: relative;
+  left: 4%;
+  top: -7.5%;
+  z-index: 5;
+}
+
+.listing-text-second {
+  margin-right: 3rem;
+  position: relative;
+  margin-left: 1rem;
+  h1 {
+    padding-bottom: -2rem;
+    font-size: 2.8rem;
+    font-weight: 900;
+  }
+}
+
+.my-email-second {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.my-brand {
+  font-size: 1.9rem;
+}
+
+@keyframes slide {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}

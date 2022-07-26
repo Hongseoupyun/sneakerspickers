@@ -1,0 +1,64 @@
+.browse-body {
+  background-color: #011638;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: 15%;
+  min-height: 1000px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#brand-browse {
+  width: 17rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  font-weight: 600;
+}
+#size-browse {
+  width: 17rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  margin-left: 0.7rem;
+  font-weight: 600;
+}
+#reset {
+  width: 6rem;
+  height: 2.5rem;
+  border: none;
+  color: white;
+  border-radius: 7px;
+  margin-left: 0.7rem;
+  font-weight: 600;
+  background-color: #f15025;
+  transform: scale(1);
+  transition: 0.7s;
+  &:hover {
+    background-color: #ea7317;
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}
+#search {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 7px;
+  margin-left: 0.7rem;
+  color: white;
+  font-weight: 600;
+  border: none;
+  background-color: #f15025;
+  transform: scale(1);
+  transition: 0.7s;
+  &:hover {
+    background-color: #ea7317;
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}

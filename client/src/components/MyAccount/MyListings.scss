@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@200;700&display=swap");
+.mylisting-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #071522;
+  height: 100%;
+  padding-bottom: 18%;
+  min-height: 1000px;
+}
+.mylisting-container {
+  position: relative;
+  font-family: "Anek Latin", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  padding-top: 13%;
+  border-radius: 25px;
+  height: 100%;
+  animation: slide 1.3s ease-out;
+  margin-left: 10%;
+  transform: scale(1);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}
+.mylisting-img {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 13px;
+  position: relative;
+  left: 1%;
+  top: 2.8rem;
+  z-index: 5;
+}
+.mylisting-card-contents {
+  position: relative;
+  left: -15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  height: 23rem;
+  width: 40rem;
+  border-radius: 22px;
+}
+
+.listing-text {
+  margin-left: 9rem;
+  position: relative;
+  h1 {
+    font-family: "Staatliches", cursive;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+.view-offers {
+  position: relative;
+  left: 10%;
+  top: -41%;
+
+  button {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    position: relative;
+    font-weight: 700;
+    height: 4rem;
+    width: 11em;
+    font-size: 1.2rem;
+    top: 9rem;
+    left: 22rem;
+    border-radius: 25px;
+    background-color: navy;
+    border: none;
+    &:hover {
+      background-color: #e60023;
+    }
+  }
+}
+#name {
+  position: relative;
+  top: 10%;
+  left: 4%;
+}
+#brand-size {
+  font-size: 1.5rem;
+  position: relative;
+  top: 48%;
+  left: 4%;
+  font-weight: 600;
+}
+#description {
+  font-size: 1.5rem;
+  position: relative;
+  top: -7%;
+  left: 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+#pref {
+  position: relative;
+  left: 4%;
+  top: -10%;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#offers {
+  position: relative;
+  left: 57%;
+  top: -75%;
+  width: 7rem;
+}
+#my-pref {
+  position: relative;
+  left: 1.6rem;
+  top: -3.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.btn-primary {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #f15025;
+  border-radius: 11.5px;
+  font-weight: 700;
+  border: none;
+  &:hover {
+    background-color: #f15025;
+  }
+}
+.my-brand {
+  font-size: 1.9rem;
+}
+
+@keyframes slide {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}

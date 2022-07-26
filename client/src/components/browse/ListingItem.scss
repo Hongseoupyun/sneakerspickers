@@ -1,0 +1,86 @@
+#browse-pref {
+  position: relative;
+  left: 4%;
+  top: 7%;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#browse-desc {
+  font-size: 1.5rem;
+  position: relative;
+  top: -13%;
+  left: 4%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+}
+#browse-name {
+  position: relative;
+  top: 4%;
+  left: 4%;
+}
+
+.make-offers {
+  position: relative;
+  left: 12%;
+  top: -17%;
+
+  button {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2rem;
+    height: 4rem;
+    width: 11em;
+    top: 57%;
+    left: 53%;
+    border-radius: 25px;
+    background-color: navy;
+    border: none;
+    &:hover {
+      background-color: #e60023;
+    }
+  }
+}
+
+#brand-size-br {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  position: relative;
+  top: 28%;
+  left: 4%;
+  font-weight: 600;
+}
+.browse-container {
+  position: relative;
+  font-family: "Anek Latin", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3.6%;
+  border-radius: 25px;
+  height: 100%;
+  animation: slide 1.3s ease-out;
+  margin-left: 10%;
+  transform: scale(1);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}

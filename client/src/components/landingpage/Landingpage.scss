@@ -1,0 +1,161 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.home-button {
+  border-radius: 12px;
+  border: none;
+  background-color: #ea7317;
+  color: white;
+  &:hover {
+    transform: scale(1.15);
+    transition: 0.6s;
+    background-color: #ea7317;
+  }
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+}
+
+.viewport-header {
+  position: relative;
+  top: 5rem;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 13%;
+  margin-bottom: 25%;
+  font-family: "Roboto Condensed", sans-serif;
+  h1 {
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+  }
+}
+.landing-h2 {
+  position: relative;
+  top: 1.2rem;
+}
+
+main {
+  background: rgba(black, 0.66);
+  color: white;
+  position: relative;
+
+  p {
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+}
+
+.scroll-us {
+  min-height: 90px;
+  background-color: transparent;
+}
+
+.about-us {
+  background: rgb(33, 37, 41);
+  font-size: 80px;
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
+}
+
+.about-us-description {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  color: white;
+  justify-content: space-between;
+  table-layout: fixed;
+  width: 100%;
+  background-color: #071522;
+}
+.landingpage-h3 {
+  color: #fec601;
+}
+
+.about-us-text {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 2%;
+  font-family: "Roboto Condensed", sans-serif;
+
+  h2 {
+    font-size: 4.4rem;
+    font-weight: 600;
+  }
+}
+.about-us-explanation {
+  font-size: 1.4rem;
+}
+
+.about-image {
+  width: 40vw;
+  height: 100%;
+}
+
+.scroll-contact {
+  min-height: 85px;
+  background-color: transparent;
+}
+
+.contact-us {
+  background: rgb(33, 37, 41);
+  font-size: 80px;
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
+}
+
+.contact-us-description {
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  background: #011638;
+  width: 100%;
+  padding-top: 26%;
+  flex-direction: row;
+  display: flex;
+}
+
+.card {
+  width: 25%;
+}
+.contact-us-img {
+  position: relative;
+  height: 65vh;
+  width: 46vw;
+  top: -21vh;
+  left: 4vw;
+  border-radius: 15px;
+}
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 18%;
+  top: -21vh;
+  gap: 5%;
+  h1 {
+    color: #fec601;
+  }
+}
+
+#contact-us-text {
+  margin-left: 4%;
+  font-size: 1.4rem;
+}
+.contact-us-icon {
+  margin-bottom: 1%;
+}
