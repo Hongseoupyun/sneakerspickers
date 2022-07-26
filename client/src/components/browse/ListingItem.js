@@ -40,7 +40,7 @@ export default function ListingItem(props) {
 
   return (
     <section className="browse-container">
-      <img className="mylisting-img" src={picture} />
+      <img className="mylisting-img" src={picture} alt=""/>
       <div className="mylisting-card-contents">
         <div className="listing-text" id="browse-name">
           <h1>{name}</h1>
