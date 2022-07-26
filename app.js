@@ -16,7 +16,7 @@ const app = express();
 //process.env.NODE_ENV => production or undefined
 
 if(process.env.NODE_ENV === "production"){
-  app.use(express.static)
+  app.use(express.static(path.join(__dirname, "client/build")));
 }
 
 
