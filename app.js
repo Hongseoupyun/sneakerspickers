@@ -13,13 +13,6 @@ const db = require("./configs/db.config");
 
 const app = express();
 
-//process.env.NODE_ENV => production or undefined
-
-if(process.env.NODE_ENV === "production"){
-  app.use(express.static(path.join(__dirname, "client/build")));
-}
-
-
 app.use(
   session({
     secret: "cookie",
@@ -50,10 +43,18 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
+
+//process.env.NODE_ENV => production or undefined
+
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static(path.join(__dirname, "client/build")));
+} else {
+  app.use(express.static(path.join(__dirname, "public")));
+}
+
 
 // directory for router
 const listingRouter = require("./routes/listings");

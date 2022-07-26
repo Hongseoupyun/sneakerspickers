@@ -22,6 +22,7 @@ function MyItems(props) {
         id="css"
         className="my-shoes-img"
         src={props.image_url}
+        alt=""
       />
       <div className="placeoffer-mylisting">
         <div className="my-shoes-name">{props.name}</div>

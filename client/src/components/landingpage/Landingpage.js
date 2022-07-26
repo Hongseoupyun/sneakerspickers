@@ -55,7 +55,7 @@ function Landingpage() {
           className="contact-us-description scroll-contact"
           id="scroll-contact-us"
         >
-          <img className="contact-us-img" src={contactUs} />
+          <img className="contact-us-img" src={contactUs} alt=""/>
           <div className="contact-us-container">
             <div>
               <h1>CONTACT US</h1>
