@@ -12,6 +12,10 @@ const pool = new Pool({
 	database: process.env.DB_DATABASE,
 })
 
+const proConfig = {
+	connectionString: process.env.DATABASE_URL
+}
+
 pool.connect().then(() => {
 	console.log("Database connection established.")
 	console.log("Port:", process.env.DB_PORT)
