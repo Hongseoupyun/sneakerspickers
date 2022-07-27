@@ -46,7 +46,8 @@ app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "public")));
+
 //process.env.NODE_ENV => production or undefined
 // if(process.env.NODE_ENV === "production"){
 //   app.use(express.static(path.join(__dirname, "client/build")));
