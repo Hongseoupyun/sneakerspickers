@@ -8,7 +8,7 @@
     "npm": "8.5.5"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node bin/www",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
