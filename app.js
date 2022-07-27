@@ -47,17 +47,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
 
-//process.env.NODE_ENV => production or undefined
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "client/build")));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client/build", "index.html"));
-  });
-} else {
-  app.use(express.static(path.join(__dirname, "public")));
-}
-
 // directory for router
 const listingRouter = require("./routes/listings");
 const listingsfilterRouter = require("./routes/listingsfilter");
@@ -89,6 +78,17 @@ app.use("/api", myOfferRouter(db));
 app.use("/api", historyRouter(db));
 app.use("/api", messagesRouter(db));
 app.use("/api", mymessagesRouter(db));
+//process.env.NODE_ENV => production or undefined
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "client/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client/build", "index.html"));
+  });
+} else {
+  app.use(express.static(path.join(__dirname, "public")));
+}
+
 
 
 module.exports = app;
