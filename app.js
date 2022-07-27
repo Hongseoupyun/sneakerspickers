@@ -20,7 +20,7 @@ app.use(
     saveUninitialized: false,
     cookie: { maxAge: 60000000 },
   })
-); 
+);
 
 //Live chat with socket.io
 // const server = require("./bin/www");
@@ -29,14 +29,14 @@ const server = http.createServer(app);
 const socketio = require("socket.io");
 const io = socketio(server);
 
- io.on("connection",(socket)=>{
-    console.log("we have a new connection for chatting!!!")
+io.on("connection", (socket) => {
+  console.log("we have a new connection for chatting!!!")
 
-    socket.on("disconnect",()=>{
-      console.log("user had left from chatting!")
-    })
-
+  socket.on("disconnect", () => {
+    console.log("user had left from chatting!")
   })
+
+})
 
 //using middlewares
 app.use(logger("dev"));
@@ -46,13 +46,17 @@ app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "client/build")));
+
 //process.env.NODE_ENV => production or undefined
-// if(process.env.NODE_ENV === "production"){
-//   app.use(express.static(path.join(__dirname, "client/build")));
-// } else {
-//   app.use(express.static(path.join(__dirname, "public")));
-// }
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "client/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+} else {
+  app.use(express.static(path.join(__dirname, "public")));
+}
 
 // directory for router
 const listingRouter = require("./routes/listings");
@@ -85,5 +89,6 @@ app.use("/api", myOfferRouter(db));
 app.use("/api", historyRouter(db));
 app.use("/api", messagesRouter(db));
 app.use("/api", mymessagesRouter(db));
+
 
 module.exports = app;
