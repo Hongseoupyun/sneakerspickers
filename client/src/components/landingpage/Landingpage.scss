@@ -159,3 +159,10 @@ main {
 .contact-us-icon {
   margin-bottom: 1%;
 }
+
+
+@media screen and (max-width:831px) {
+  .contact-us-container {
+    font-size: 20px;
+  }
+}
